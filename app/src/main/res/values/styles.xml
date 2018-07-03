@@ -15,12 +15,21 @@
     </style>
     
     <style name="EditTextWhite" parent="TextAppearance.AppCompat">
-        <item name="textColorHint">@color/colorIcons</item>
-        <item name="textColorPrimary">@color/colorIcons</item>
-        <item name="colorAccent">@color/colorIcons</item>
-        <item name="colorControlNormal">@color/colorIcons</item>
-        <item name="colorControlActivated">@color/colorIcons</item>
-        <item name="textSize">20sp</item>
+        <item name="android:textColorHint">@color/colorEditTextWhite</item>
+        <item name="android:textColorPrimary">@color/colorEditTextWhite</item>
+        <item name="colorAccent">@color/colorEditTextWhite</item>
+        <item name="colorControlNormal">@color/colorEditTextWhite</item>
+        <item name="colorControlActivated">@color/colorEditTextWhite</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorEditTextBlack</item>
+        <item name="android:textColorPrimary">@color/colorEditTextBlack</item>
+        <item name="colorAccent">@color/colorEditTextBlack</item>
+        <item name="colorControlNormal">@color/colorEditTextBlack</item>
+        <item name="colorControlActivated">@color/colorEditTextBlack</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>

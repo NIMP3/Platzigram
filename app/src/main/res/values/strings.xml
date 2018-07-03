@@ -5,4 +5,13 @@
     <string name="text_button_login">Login</string>
     <string name="text_link_question_account">¿No tienes cuenta?,</string>
     <string name="text_link_create_account">crea una aquí</string>
+
+    <!--=========================================================================================-->
+    <!--Text - CreateAccountActivity-->
+    <string name="toolbar_title_create_account">Crear Cuenta</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="hint_button_join">ÚNETE</string>
 </resources>
