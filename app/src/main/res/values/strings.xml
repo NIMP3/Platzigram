@@ -14,4 +14,8 @@
     <string name="hint_user">Usuario</string>
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="hint_button_join">ÚNETE</string>
+    <string name="username_card">Edwin Yovany</string>
+    <string name="firstword_card">Hace</string>
+    <string name="text_timecard">4 días</string>
+    <string name="text_likenumbercard">10 Me Gusta</string>
 </resources>

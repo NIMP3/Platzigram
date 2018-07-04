@@ -15,4 +15,7 @@
     <string name="hint_user">User</string>
     <string name="hint_confirm_password">Confirm password</string>
     <string name="hint_button_join">JOIN</string>
+    <string name="firstword_card">Hace</string>
+    <string name="text_timecard">4 días</string>
+    <string name="text_likenumbercard">10 Me Gusta</string>
 </resources>

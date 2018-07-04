@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pictureCard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_cardview"
+    cardview:cardCornerRadius="@dimen/cornerradius_cardview">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPictureCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintDimensionRatio="16:9"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="1.0"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:srcCompat="@drawable/fondo" />
+
+        <TextView
+            android:id="@+id/tvUsernameCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/username_card"
+            android:textColor="@color/colorEditTextWhite"
+            android:textSize="@dimen/textsize_username_card"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline8"
+            cardview:layout_constraintHorizontal_bias="1.0"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline7"
+            cardview:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            cardview:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstword_card"
+            android:textColor="@color/colorEditTextWhite"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline7"
+            cardview:layout_constraintTop_toBottomOf="@+id/tvUsernameCard" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            cardview:layout_constraintGuide_begin="16dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            cardview:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/tvTimeCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_timecard"
+            android:textColor="@color/colorEditTextWhite"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline8"
+            cardview:layout_constraintStart_toEndOf="@+id/textView3"
+            cardview:layout_constraintTop_toBottomOf="@+id/tvUsernameCard" />
+
+        <CheckBox
+            android:id="@+id/cbLikeCheckCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:button="@drawable/checkbox_selector"
+            cardview:layout_constraintStart_toStartOf="@+id/guideline7"
+            cardview:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/tvLikeNumberCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_likenumbercard"
+            android:textColor="@android:color/white"
+            cardview:layout_constraintBottom_toBottomOf="@+id/cbLikeCheckCard"
+            cardview:layout_constraintEnd_toStartOf="@+id/guideline8"
+            cardview:layout_constraintStart_toEndOf="@+id/cbLikeCheckCard"
+            cardview:layout_constraintTop_toTopOf="@+id/cbLikeCheckCard" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorBackgroundTextCard"
+            cardview:layout_constraintBottom_toBottomOf="@+id/ivPictureCard"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
