@@ -13,4 +13,6 @@
     <color name="colorEditTextBlack">#000000</color>
 
     <color name="colorBackgroundTextCard">#53292929</color>
+    <color name="colorTintBottomBar">#ffffff</color>
+    <color name="colorTextBottomBar">#ffffff</color>
 </resources>

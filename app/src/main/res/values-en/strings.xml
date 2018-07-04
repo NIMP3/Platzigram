@@ -18,4 +18,7 @@
     <string name="firstword_card">Hace</string>
     <string name="text_timecard">4 días</string>
     <string name="text_likenumbercard">10 Me Gusta</string>
+    <string name="titletab_search">Search</string>
+    <string name="titletab_home">Home</string>
+    <string name="titletab_profile">Me</string>
 </resources>

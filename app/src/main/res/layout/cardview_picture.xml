@@ -24,6 +24,16 @@
             cardview:layout_constraintTop_toTopOf="parent"
             cardview:srcCompat="@drawable/fondo" />
 
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorBackgroundTextCard"
+            cardview:layout_constraintBottom_toBottomOf="@+id/ivPictureCard"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="@+id/guideline6" />
+
         <TextView
             android:id="@+id/tvUsernameCard"
             android:layout_width="0dp"
@@ -99,16 +109,6 @@
             cardview:layout_constraintEnd_toStartOf="@+id/guideline8"
             cardview:layout_constraintStart_toEndOf="@+id/cbLikeCheckCard"
             cardview:layout_constraintTop_toTopOf="@+id/cbLikeCheckCard" />
-
-        <android.support.constraint.Group
-            android:id="@+id/group"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@color/colorBackgroundTextCard"
-            cardview:layout_constraintBottom_toBottomOf="@+id/ivPictureCard"
-            cardview:layout_constraintEnd_toEndOf="parent"
-            cardview:layout_constraintStart_toStartOf="parent"
-            cardview:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>

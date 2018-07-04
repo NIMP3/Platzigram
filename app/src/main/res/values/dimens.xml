@@ -3,4 +3,5 @@
     <dimen name="cornerradius_cardview">4dp</dimen>
     <dimen name="height_cardview">200dp</dimen>
     <dimen name="textsize_username_card">25sp</dimen>
+    <dimen name="bottombar_height">70dp</dimen>
 </resources>
