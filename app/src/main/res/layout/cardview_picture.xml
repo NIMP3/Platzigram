@@ -5,7 +5,9 @@
     android:id="@+id/pictureCard"
     android:layout_width="match_parent"
     android:layout_height="@dimen/height_cardview"
-    android:layout_margin="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
     cardview:cardCornerRadius="@dimen/cornerradius_cardview">
 
     <android.support.constraint.ConstraintLayout
