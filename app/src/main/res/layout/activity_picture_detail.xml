@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+        android:id="@+id/appbarProfile"
         android:layout_width="match_parent"
         android:layout_height="@dimen/appbarlayout_height"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -16,8 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
-            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
 
             <ImageView
@@ -26,7 +25,8 @@
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/fondo"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                android:transitionName="@string/transition_name_picture"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -44,4 +44,15 @@
 
         <include layout="@layout/content_picture_detail"/>
     </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/floatingbutton_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_heart"
+        app:layout_anchor="@id/appbarProfile"
+        app:layout_anchorGravity="bottom|end" />
 </android.support.design.widget.CoordinatorLayout>

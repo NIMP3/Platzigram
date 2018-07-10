@@ -25,7 +25,8 @@
             cardview:layout_constraintHorizontal_bias="1.0"
             cardview:layout_constraintStart_toStartOf="parent"
             cardview:layout_constraintTop_toTopOf="parent"
-            cardview:srcCompat="@drawable/fondo" />
+            cardview:srcCompat="@drawable/fondo"
+            android:transitionName="@string/transition_name_picture"/>
 
         <android.support.constraint.Group
             android:id="@+id/group"
