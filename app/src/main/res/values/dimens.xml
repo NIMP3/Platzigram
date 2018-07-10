@@ -5,4 +5,5 @@
     <dimen name="textsize_username_card">25sp</dimen>
     <dimen name="bottombar_height">70dp</dimen>
     <dimen name="floatingbutton_margin">16dp</dimen>
+    <dimen name="appbarlayout_height">256dp</dimen>
 </resources>

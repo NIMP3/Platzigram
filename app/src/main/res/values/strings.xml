@@ -24,4 +24,6 @@
     <string name="titletab_search">Buscar</string>
     <string name="titletab_home">Home</string>
     <string name="titletab_profile">Yo</string>
+    <string name="titleimage_Detail">\"Todo copas en la playa\"</string>
+    <string name="lorem">AYLLU fue desarrollada en la modalidad de trabajo de grado en la Universidad de Nariño, disponible para dispositivos móviles con sistema operativo Android, la herramienta permite registrar datos en campo de manera efectiva, alta disponibilidad de la información y procesamiento de datos para la toma de decisiones en pro de la conservación de este extenso y a veces remoto bien seriado.</string>
 </resources>

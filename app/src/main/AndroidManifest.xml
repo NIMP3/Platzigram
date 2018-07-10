@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.yovanydev.platzigram">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -28,6 +28,16 @@
                 android:value=".LoginActivity" />
         </activity>
         <activity android:name=".view.ContainerActivity" />
+        <activity
+            android:name=".view.PictureDetailActivity"
+            android:parentActivityName=".view.ContainerActivity"
+            tools:targetApi="jelly_bean">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ContainerActivity"/>
+
+        </activity>
     </application>
 
 </manifest>
