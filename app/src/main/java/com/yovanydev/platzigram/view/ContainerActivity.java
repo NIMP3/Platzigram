@@ -38,14 +38,14 @@ public class ContainerActivity extends AppCompatActivity {
                         ProfileFragment profileFragment= new ProfileFragment();
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.container, profileFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_ENTER_MASK)
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                                 .commit();
                         break;
                     case R.id.tabSearch:
                         SearchFragment searchFragment = new SearchFragment();
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.container, searchFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                                 .commit();
                         break;
                 }

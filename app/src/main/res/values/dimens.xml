@@ -19,4 +19,6 @@
     <dimen name="limitY_usernametoolbar_profile">-250dp</dimen>
     <dimen name="margintoptoolbar_username_profile">40dp</dimen>
     <dimen name="margintop_circleimage_profile">40dp</dimen>
+    <dimen name="picture_gridview_column_with">150dp</dimen>
+    <dimen name="cardview_picturealbum_width">150dp</dimen>
 </resources>
