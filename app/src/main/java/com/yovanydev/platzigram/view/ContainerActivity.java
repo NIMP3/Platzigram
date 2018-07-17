@@ -2,14 +2,17 @@ package com.yovanydev.platzigram.view;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.yovanydev.platzigram.R;
 import com.yovanydev.platzigram.view.fragment.HomeFragment;
+import com.yovanydev.platzigram.view.fragment.NewPostFragment;
 import com.yovanydev.platzigram.view.fragment.ProfileFragment;
 import com.yovanydev.platzigram.view.fragment.SearchFragment;
 
@@ -20,8 +23,8 @@ public class ContainerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
 
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottombar);
-        bottomNavigationView.setSelectedItemId(R.id.tabHome);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -52,5 +55,7 @@ public class ContainerActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        bottomNavigationView.setSelectedItemId(R.id.tabHome);
     }
 }

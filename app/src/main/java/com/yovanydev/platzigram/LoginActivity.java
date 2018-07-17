@@ -35,7 +35,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://nimp3.github.io"));
-        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null){
+            startActivity(intent);
+        }
     }
 
 }
