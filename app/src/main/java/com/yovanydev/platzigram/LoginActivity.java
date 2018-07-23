@@ -2,19 +2,59 @@ package com.yovanydev.platzigram;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.yovanydev.platzigram.view.ContainerActivity;
 import com.yovanydev.platzigram.view.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
+    FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        final TextInputEditText etEmail = findViewById(R.id.et_username);
+        final TextInputEditText etPassword = findViewById(R.id.et_pass);
+
+        Button buttonLogin = findViewById(R.id.btn_login);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                String email = etEmail.getText().toString().trim();
+                String password = etPassword.getText().toString().trim();
+
+
+                if (email.equals("") || password.equals("")){
+                    Snackbar.make(view,"Por favor complete todos los campos",Snackbar.LENGTH_SHORT).show();
+                    return;
+                }
+
+                firebaseAuth.signInWithEmailAndPassword(email,password)
+                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) goContainer();
+                                else
+                                    Snackbar.make(view,"Autenticación Fallida",Snackbar.LENGTH_SHORT).show();
+                            }
+                        });
+            }
+        });
     }
 
     //Ir a la Ativity CreateAccount en caso de no estar registrado
@@ -24,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     //Ir a la Activity Container cuando el usuario se loguea
-    public void goContainer(View view) {
+    public void goContainer() {
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
