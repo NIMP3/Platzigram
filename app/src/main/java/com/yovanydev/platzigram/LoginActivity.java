@@ -16,6 +16,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.yovanydev.platzigram.view.ContainerActivity;
 import com.yovanydev.platzigram.view.CreateAccountActivity;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -25,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        AppCenter.start(getApplication(), "47a0412d-5918-47c4-82f2-f809fc3d9a6f", Analytics.class, Crashes.class);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
